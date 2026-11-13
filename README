@@ -1,0 +1,12 @@
+# Taller Clúster Hadoop con Docker
+
+## Estructura del proyecto
+- `docker-compose.yml`: Configuración de los contenedores (NameNode, DataNodes, ResourceManager, NodeManager, HistoryServer).
+- `hadoop.env`: Variables de entorno para el clúster.
+- `data/`: Datasets de prueba utilizados para las ejecuciones en HDFS.
+- `scripts/`: Comandos y notas de ejecución de MapReduce.
+
+## Instrucciones de uso
+1. Levantar el clúster: `docker compose up -d`
+2. Verificar nodos activos en YARN: `http://localhost:8088`
+3. Ejecutar el trabajo de WordCount dentro del NameNode.

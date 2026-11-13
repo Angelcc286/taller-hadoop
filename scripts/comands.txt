@@ -1,0 +1,11 @@
+# 1. Crear directorio en HDFS
+hadoop fs -mkdir -p /input
+
+# 2. Subir el archivo de datos
+hadoop fs -put ../data/sample.txt /input/
+
+# 3. Ejecutar el trabajo de MapReduce en YARN
+hadoop jar /opt/hadoop-3.2.1/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.2.1.jar wordcount /input /output_yarn
+
+# 4. Ver los resultados
+hadoop fs -cat /output_yarn/part-r-00000

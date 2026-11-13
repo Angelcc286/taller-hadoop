@@ -1,0 +1,5 @@
+Apache Hadoop es un framework de codigo abierto que permite el procesamiento distribuido de grandes conjuntos de datos a traves de cluseteres de computadoras.
+Hadoop esta diseñado para escalar desde un solo servidor hasta miles de maquinas.
+El procesamiento distribuido en Hadoop se realiza utilizando el modelo de programacion MapReduce.
+Hadoop utiliza HDFS como su sistema de archivos distribuido para almacenar los datos de forma confiable en el clúster.
+Apache Hadoop, MapReduce y HDFS forman el núcleo del ecosistema de Big Data.
